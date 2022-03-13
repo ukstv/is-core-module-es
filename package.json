@@ -1,0 +1,45 @@
+{
+  "name": "is-core-module-es",
+  "version": "0.0.1",
+  "description": "Is this specifier a node.js core module?",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "./dist",
+    "./data"
+  ],
+  "scripts": {
+    "build": "./node_modules/.bin/tsc -p .",
+    "test": "./node_modules/.bin/tsm ./node_modules/uvu/bin.js",
+    "test:watch": "./node_modules/.bin/watchlist src -- pnpm run test"
+  },
+  "keywords": [
+    "core",
+    "modules",
+    "module",
+    "npm",
+    "node",
+    "dependencies"
+  ],
+  "author": "Sergey Ukustov <sergey@ukstv.me>",
+  "license": "(MIT OR Apache-2.0)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukstv/is-core-module-es.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ukstv/is-core-module-es/issues"
+  },
+  "homepage": "https://github.com/ukstv/is-core-module-es",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "prettier": "^2.5.1",
+    "tsm": "^2.2.1",
+    "typescript": "^4.6.2",
+    "uvu": "^0.5.3",
+    "watchlist": "^0.3.1"
+  }
+}
